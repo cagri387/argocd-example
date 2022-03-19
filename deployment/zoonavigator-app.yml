@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: zoonavigator
+  namespace: management-tools
+  labels:
+    name: zoonavigator
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: zoonavigator
+  template:
+    metadata:
+      labels:
+        app: zoonavigator
+    spec:
+      containers:
+        - name: zoonavigator
+          image: elkozmon/zoonavigator:latest
+          ports:
+            - containerPort: 9000
+          env:
+            - name: TZ
+              value: Europe/Istanbul

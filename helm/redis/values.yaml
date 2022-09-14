@@ -1,10 +1,4 @@
 auth:
   password: xxxxxxxxxxxxxxx
 master:
-  resources:
-    limits:
-      memory: 2000Mi
-      cpu: "1"
-    requests:
-      memory: 1000Mi
-      cpu: "1"
+  resources: {"limits":{"cpu":"1","memory":"1048Mi"}

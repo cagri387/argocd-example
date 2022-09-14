@@ -1,3 +1,7 @@
 maliye-redis:
   replica:
     replicaCount: 5
+  master:
+    service:
+      ports:
+        redis: 5555

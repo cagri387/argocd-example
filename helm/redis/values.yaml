@@ -5,3 +5,10 @@ redis:
     service:
       ports:
         redis: 5555
+    resources:
+      limits:
+        memory: 2148Mi
+        cpu: "2"
+      requests:
+        memory: 1000Mi
+        cpu: "1"

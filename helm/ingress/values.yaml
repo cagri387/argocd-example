@@ -1,4 +1,11 @@
 ingress-nginx:
   controller:
     name: controller
-    replicaCount: 4
+    replicaCount: 2
+    resources:
+      limits:
+        memory: 2148Mi
+        cpu: "2"
+      requests:
+        memory: 1000Mi
+        cpu: "1"

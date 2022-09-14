@@ -1,4 +1,4 @@
-my-redis:
+redis:
   replica:
     replicaCount: 5
   master:

@@ -1,5 +1,5 @@
 auth:
-  password: cagri
+  password: xxxxxxxxxxxxxxx
 master:
   resources:
     limits:

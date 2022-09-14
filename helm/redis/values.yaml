@@ -1,4 +1,4 @@
-maliye-redis:
+my-redis:
   replica:
     replicaCount: 5
   master:

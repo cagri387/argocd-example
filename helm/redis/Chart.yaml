@@ -4,6 +4,6 @@ type: application
 version: 1.0.0
 appVersion: "7.0.4"
 dependencies:
-  - name: redis
+  - name: my-redis
     repository: https://charts.bitnami.com/bitnami
     version: 17.0.10

@@ -1,6 +1,6 @@
 redis:
   replica:
-    replicaCount: 5
+    replicaCount: 4
   master:
     service:
       ports:

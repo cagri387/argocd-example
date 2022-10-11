@@ -1,16 +1,22 @@
 redis:
-  replica:
-    replicaCount: 4
+  auth:
+    password: abc123xyz
+  commonConfiguration: |-
+    appendonly no
+    save ""
   master:
-    service:
-      ports:
-        redis: 5555
+    persistence:
+      enabled: false
     resources:
       limits:
-        memory: 2148Mi
+        memory: 4096Mi
         cpu: "2"
-      requests:
-        memory: 1000Mi
-        cpu: "1"
+  replica:
+    persistence:
+      enabled: false
+      resources:
+        limits:
+          memory: 4096Mi
+          cpu: "2"
   sentinel:
     enabled: true

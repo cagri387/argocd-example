@@ -1,5 +1,6 @@
 redis:
   auth:
+    enabled: false
     password: abc123xyz
   commonConfiguration: |-
     appendonly no
